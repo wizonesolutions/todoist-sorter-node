@@ -1,6 +1,6 @@
 {
   "name": "todoist-sorter-node",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Sort Todoist inbox tasks into projects using ##.",
   "main": "todoist-sorter.js",
   "scripts": {
