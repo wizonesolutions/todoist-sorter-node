@@ -28,6 +28,7 @@ if (settingsFound) {
 if (settings && settings.todoistEmail && settings.todoistPassword) {
   console.log("Logging in...")
   try {
+    // TODO: Persist the Todoist user object somehow.
     api = new Todoist(settings.todoistEmail, settings.todoistPassword, function (err, resp, user) {
       if (typeof user !== undefined) {
 //      console.log("Checking for new tasks now and every " + (frequency / 1000 / 60) + " minutes...");

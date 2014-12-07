@@ -23,11 +23,10 @@ and start the app to do it immediately.
 
 ## Installation (command line required)
 
-It is written in [Meteor](http://meteor.com), so you have to install that to
-use it. It's super-easy. Just copy and paste one line.
+It is written in NodeJS, so you have to install that to
+use it. See https://nodejs.org for instructions.
 
-Then clone this app from GitHub and run it with
-`meteor --settings=settings.json` AFTER you configure it..
+Then clone this app from GitHub and run it as explained below AFTER you configure it.
 
 ## Configuration
 
@@ -40,14 +39,11 @@ it's abuse. I haven't had any issues with a 5-minute interval so far.
 ### Privacy/security
 
 These are used by the app to talk directly to the
-Todoist API and are not sent anywhere else. I store the Todoist token in a local
-Mongo database using Meteor's APIs so that you don't have to log in for every
-check (your credentials are transferred with HTTPS, but this minimizes how
-often they have to be).
+Todoist API and are not sent anywhere else.
 
 ## Running
 
-`meteor --settings=settings.json`
+`node todoist-sorter`
 
 ## Reporting bugs, requesting features, asking questions
 
@@ -58,18 +54,9 @@ Use the [issue list](https://github.com/wizonesolutions/todoist-sorter/issues) o
 If there is no GitHub issue for the known issue, you are
 welcome to open one.
 
-## Stopping
-
-You can stop Meteor apps by pressing `Ctrl + C`.
-
 ## Known issues
 
 - Won't work if the project name has spaces.
-- I don't know if Todoist login tokens expire. If they do, you'll start getting
-`LOGIN_ERROR`s, and you will have to `meteor reset` to get yourself logged in
-again. This is safe since the only thing that is stored is your user info from
-Todoist (by the [todoist](https://github.com/wizonesolutions/meteor-todoist)
-package).
 - **Occasionally**, the app will struggle with Todoist tasks added from Gmail. This is because Todoist actually
 stores the task name as `link to Gmail (Email subject line)`. When you add `##project` to this,
 it gets placed inside the parentheses, making the app unable to match it.
@@ -86,6 +73,5 @@ of calling it every time.
 
 ## Author
 
-This Meteor package was written by [WizOne Solutions](http://www.wizonesolutions.com), a Meteor and Drupal CMS developer.
-
-My largest Meteor app so far is [Spendflow](https://github.com/spendflow/spendflow). It has a private beta. Check it out.
+This application was written by [WizOne Solutions](http://www.wizonesolutions.com), a JavaScript, Meteor and Drupal CMS
+developer.
