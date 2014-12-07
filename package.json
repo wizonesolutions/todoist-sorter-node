@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/wizonesolutions/todoist-sorter-node",
   "dependencies": {
-    "node-promise": "^0.5.10",
-    "node-todoist-api": "https://github.com/JTarasovic/node-todoist-api/tarball/master",
-    "q": "^1.1.2"
+    "async": "^0.9.0",
+    "node-persist": "0.0.2",
+    "node-todoist-api": "https://github.com/wizonesolutions/node-todoist-api/tarball/master",
+    "underscore": "^1.7.0",
+    "underscore.string": "^2.4.0"
   }
 }
