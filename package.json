@@ -1,0 +1,24 @@
+{
+  "name": "todoist-sorter-node",
+  "version": "0.0.0",
+  "description": "Sort Todoist inbox tasks into projects using ##.",
+  "main": "todoist-sorter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wizonesolutions/todoist-sorter-node.git"
+  },
+  "author": "",
+  "license": "GPLv3+",
+  "bugs": {
+    "url": "https://github.com/wizonesolutions/todoist-sorter-node/issues"
+  },
+  "homepage": "https://github.com/wizonesolutions/todoist-sorter-node",
+  "dependencies": {
+    "node-promise": "^0.5.10",
+    "node-todoist-api": "https://github.com/JTarasovic/node-todoist-api/tarball/master",
+    "q": "^1.1.2"
+  }
+}
