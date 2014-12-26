@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "todoist-sorter": "todoist-sorter.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/wizonesolutions/todoist-sorter-node.git"

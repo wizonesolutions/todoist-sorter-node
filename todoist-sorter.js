@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var fs = require('fs')
   , persist = require('node-persist')
   , async = require('async')
